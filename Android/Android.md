@@ -1,7 +1,15 @@
 # Android
 
 1.equals和hashcode的区别，对象的内存地址会变化吗？equals相等的对象会一直相等吗为什么？
-为什么map重写equals必须重写hashcode？ == 和equals的区别？int 128 = intenger 128吗？
+为什么重写equals必须重写hashcode？ == 和equals的区别？int 128 = intenger 128吗？
+  1，equals是判断两个对象是否相等。
+  2，Hashcode返回一个对象的哈希码
+  3，对象的内存地址不会发生变化。
+  4,equals相等的对象如果没有重写equals方法表示两个对象一直相等。
+  5，因为要保证equals和hashcode一致性。
+  6，如果没有重写equals方法，和==是一样的，另外==比较基本类型的值。
+  7，int 128不==
+  
 
 
 2.hashmap的内部结构，他与linkedhashmap的区别，linkedhashmap的实现原理
