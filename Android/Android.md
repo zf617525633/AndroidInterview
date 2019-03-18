@@ -2,24 +2,31 @@
 
 1.equals和hashcode的区别，对象的内存地址会变化吗？equals相等的对象会一直相等吗为什么？
 为什么重写equals必须重写hashcode？ == 和equals的区别？int 128 = intenger 128吗？
-  1，equals是判断两个对象是否相等。
-  2，Hashcode返回一个对象的哈希码
-  3，对象的内存地址不会发生变化。
-  4,equals相等的对象如果没有重写equals方法表示两个对象一直相等。
-  5，因为要保证equals和hashcode一致性。
-  6，如果没有重写equals方法，和==是一样的，另外==比较基本类型的值。
-  7，int 128不==
+  > 1，equals是判断两个对象是否相等。
+  <br>2，Hashcode返回一个对象的哈希码
+  <br>3，对象的内存地址不会发生变化。
+  <br>4,equals相等的对象如果没有重写equals方法表示两个对象一直相等。
+  <br>5，因为要保证equals和hashcode一致性。
+  <br>6，如果没有重写equals方法，和==是一样的，另外==比较基本类型的值。
+  <br>7，int 128==Integer 128，因为Integer会自动拆箱
   
 
 
 2.hashmap的内部结构，他与linkedhashmap的区别，linkedhashmap的实现原理
+>1),HashMap内部使用哈希表加上链表实现，最新的加上了红黑树实现。
+ <br>2),LinkedHashMap使用哈希表和双向循环链表实现，优势是能保持存储时的顺序。
+ <br>3),LinkedHashMap的实现原理是比HashMap的链表中增加了一个before和一个after。
 
 
 3.java的泛型了解吗？具体怎么使用？extend和super了解吗？ 有什么区别
+>1),Java泛型是限定类型用的，具体比如在一个List中加入一个泛型，该List的存储这个类型。
+ <br>2),extends表示上届，super表示下届。一般extend用在消费者中，super用在生产者中。
 
 
 
 4.安卓的虚拟机是什么？特性是什么？虚拟机怎么把包文件安装到手机，具体怎么操作
+>1),Android的虚拟机有art和Dalvik
+ <br>2),.....
 
 
 
@@ -27,7 +34,7 @@
 
 6.用过数据库吗？ 怎么用的？假如新版本老的数据库字段删除了，怎么安全升级数据库？
 
-7.线程同步知道吗？ 怎么实现的？ 线程的内存共享是什么？
+7.线程同步知道吗？怎么实现的？线程的内存共享是什么？
 
 8.handler知道吗？message消息怎么排序的？ message怎么取出来？handler会导致内存泄漏吗？ 为什么
 
@@ -42,6 +49,7 @@
 13.8.0 、9.0的适配知道吗？
 
 14.方法重载和重写，假如一个方法的返回值不同，方法名和参数相同，是重载吗？
+>1),不是重载。
 
 15.fragment的getactivity方法为空遇到过吗？怎么解决的
 
