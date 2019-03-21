@@ -42,7 +42,8 @@
  在共享内存的时候要保证线程的安全性。
 
 8.handler知道吗？message消息怎么排序的？ message怎么取出来？handler会导致内存泄漏吗？ 为什么
->1),Message通过Qenue的方式排序，即先到先得，
+>1),Message通过Qenue的方式排序，即先到先得，消息从Looper.loop里面取出来的，因为Handler持有当前类的引用，
+生命周期和当前的线程又不是一样的，所以会导致内存泄漏。
 
 9.activity的启动流程知道吗？ activity是new出来的吗？activitythread是具体干啥的？
 
