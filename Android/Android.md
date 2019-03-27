@@ -84,6 +84,7 @@
 22.window和activity的关系
 
 23.用过反射吗？具体怎么实现的
+> 1),反射通过Class和反射包来实现。
 
 24.arraymap知道吗  具体怎么实现的？ 为什么intent传值用bundle不用hashmap
 
